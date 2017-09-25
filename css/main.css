@@ -1,0 +1,175 @@
+
+/*
+1. Changed background
+*/
+
+body {
+    background-image: url('https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif');
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*
+body {
+    background-image: url('../img/background.png');
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+*/
+
+/*
+2. Added font-family LOBSTER/enlarged Font-Size to 40px
+changed text color
+*/
+
+.title,
+.subtitle {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    font-family: lobster;
+    font-size: 40px;
+    color: red;
+}
+
+.roll{
+    text-align: center;
+    margin: flex;
+    width: 200%;
+    padding: 5% 0% 0% 0%;
+
+}
+
+.player {
+    box-shadow: 0 2px 5px 0 #000;
+    transition: all 400ms;
+    left: 10px;
+}
+
+.player,
+.tile {
+    width: 70px;
+    height: 70px;
+}
+
+.player1 {
+    position: absolute;
+    background-image: url('../img/hillary.png');
+    background-size: cover;
+    top: 160px;
+}
+
+.player1.alter-ego {
+    background-image: url('../img/soros.jpg');
+}
+
+.player1::before {
+    position: relative;
+    font-weight: bold;
+    content: 'Hillary';
+    top: -15px;
+    left: 25%;
+    color: black;
+}
+
+.player2 {
+    position: absolute;
+    top: 250px;
+    background-image: url('../img/trump.png');
+    background-size: cover;
+}
+
+.player2.alter-ego {
+    background-image: url('../img/putin.jpg');
+}
+
+.player2::before {
+    position: relative;
+    font-weight: bold;
+    content: 'Trump';
+    top: -15px;
+    left: 25%;
+    color: black;
+}
+
+.die-container {
+    max-width: 280px;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.die {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    cursor: pointer;
+}
+
+/*
+3. Introduced and moved "Roll Me" caption to center
+*/
+
+.die-container h1 {
+    position: center;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-0%);
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    color: red;
+}
+
+.board-container {
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+4. Changed Tile and Winner-Circle images
+*/
+
+
+.tile {
+    box-sizing: border-box;
+    display: block;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6vJU69C8KcfUhGuFVcOzJeL9RFJJU8mldBn4rwXLMyAiV51_N');
+    background-size: coblackver;
+    border: 2px solid #333;
+    content: '';
+    margin: 5px;
+}
+
+#winner-circle {
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHzWKTqN8f-ouaAjXrJRHm-yEJ94dBgljjCIPOorIO1SoRjU99_A');
+}
+
+/*
+5. Added ELECTORAL Map/Red border w/ round corners 
+and blue background plus Title
+*/
+
+#electoral-map {
+    color:red;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10% 20% 10% 20%;
+    border-color: #C13939;
+    border-width: 25px;
+    border-style: solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #391EA7;
+}

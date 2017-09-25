@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dice Roll Game</title>
+    <link rel='stylesheet' href='./css/main.css'>
+</head>
+
+<body>
+    <h1 class="title">Super Skillful Board Game</h1>
+    <h2 class="subtitle">Nothing But Pure Skill</h2>
+    <input type="text" placeholder="Predict">
+    <button type="submit">Submit Prediction</button>
+    <div id='player1' class='player player1'></div>
+    <div id='player2' class='player player2'></div>
+    <div id='die-container' class='die-container'>
+        <img src='https://media.giphy.com/media/5xtDarpTZP1hgRgReLK/giphy.gif' id='die' class='die' />
+        <h1 id='roll' class='roll'>Roll Me ("click on dice")</h1>
+    </div>
+    <div id='board-container' class='board-container'>
+        <span class="tile" id="tile1"></span>
+        <span class="tile" id="tile2"></span>
+        <span class="tile" id="tile3"></span>
+        <span class="tile" id="tile4"></span>
+        <span class="tile" id="tile5"></span>
+        <span class="tile" id="tile6"></span>
+        <span class="tile" id="tile7"></span>
+        <span class="tile" id="tile8"></span>
+        <span class="tile" id="tile9"></span>
+        <span class="tile" id="tile10"></span>
+        <span class="tile winner" id="winner-circle"></span>
+        <!--<img class="crazy-stick-figure"src="https://media2.giphy.com/media/cCyMTqkaLzxwA/200w.gif#5-grid2" alt="">
+        -->
+        </div>
+
+    <div  id='electoral-map'>
+        <h1 class="Electoral-Map-Title">Electoral College Map</h1>
+        <img    src='http://aucoplan.us/wp-content/uploads/2017/07/road-trip-Map-Of-Us-Electoral-Votes-95-Free-for-with-Map-Of-Us-Electoral-Votes.jpg' alt="electoral map" height="400px" width="600px"/>
+
+    </div>
+
+<script src="js/setup.js"></script>
+<script src="js/rollTheDice.js"></script>
+<script src="js/movePlayer.js"></script>
+<script src="js/gameOver.js"></script>
+
+
+
+
+</body>
+
+</html>
